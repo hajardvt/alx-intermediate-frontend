@@ -1,0 +1,22 @@
+# SASS/SCSS installation steps (Node + npm)
+
+1) Install NVM (Node Version Manager)
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   # close terminal, reopen (or run: source ~/.nvm/nvm.sh)
+
+2) Install Node.js 20.16.0 (recommended)
+   nvm install 20.16.0
+   nvm use 20.16.0
+   node -v
+   npm -v
+
+3) Install Sass compiler (project local)
+   cd alx-intermediate-frontend/0x03-sass_scss
+   npm init -y
+   npm install sass -v 3.7.4
+
+4) Compile examples (from this directory)
+   npx sass 0-debug_log.scss
+   npx sass 1-color_variable.scss
+   npx sass 2-nested_tag.scss
+   npx sass 3-mixin_margins.scss
